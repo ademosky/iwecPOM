@@ -16,7 +16,7 @@ public class ProductListPageObjects extends Base {
 	public	WebElement cellPhonesSubCategory;
 	@FindBy(xpath = "(//button[@title=\"Add to compare list\"])[2]")
 	public	WebElement addCompareHtcOneMiniBlue;
-	@FindBy(xpath = "(//button[@title=\"Add to compare list\"])[3]")
+	@FindBy(xpath = "(//button[@title='Add to compare list'])[3]")
 	public	WebElement addCompareNokiaLumia;
 	@FindBy(xpath = "//a[@href=\"/compareproducts\"]")
 	public	WebElement productComparisonBtn;

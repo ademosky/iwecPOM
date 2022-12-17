@@ -11,7 +11,7 @@ import pageObjects.HomePageObjects;
 import pageObjects.LoginPageObjects;
 import testData.TestData;
 
-//Almir 
+//Almir  proba git
 
 public class LoginPageTestCases extends Base {
 		
@@ -56,5 +56,6 @@ public class LoginPageTestCases extends Base {
 			comm.assertCurrentWithExpectedTitle(td.logInPageTitle);
 		
 		}
+		
 
 }

@@ -42,6 +42,10 @@ public class CommonPageObjects extends Base {
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.elementToBeClickable(elementToWait));
 	}
+	public void waitVisibilityOfElement (WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
 	public void selectFromDropMenuByIndex(WebElement elementDropDown, int index ) {
 		Select select = new Select(elementDropDown);
 		select.selectByIndex(index);

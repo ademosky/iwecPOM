@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import base.Base;
+import pageObjects.CommonPageObjects;
 import pageObjects.HomePageObjects;
 import pageObjects.ProductDetailPageObjects;
 import pageObjects.ProductListPageObjects;
@@ -15,6 +16,7 @@ public class PlpTestCases extends Base {
 	ProductListPageObjects plp;
 	TestData td;
 	ProductDetailPageObjects pdp;
+	CommonPageObjects comm;
 	
 	@BeforeMethod
 	public void start() {
@@ -23,19 +25,23 @@ public class PlpTestCases extends Base {
 		plp = new ProductListPageObjects();
 		td = new TestData();
 		pdp = new ProductDetailPageObjects();
+		comm = new CommonPageObjects();
 		
 	}
 	@AfterMethod
 	public void end() {
-		//driver.quit();
+		//comm.closeBrowser();
 	}
 	@Test
-	public void TC_PRODUCT_009_verifyCompareTwoProducts()  {
+	public void TC_PRODUCT_009_verifyCompareTwoProducts() throws InterruptedException  {
 		hp.navigateToElectronicsCategory();
 		plp.cellPhonesSubCategory.click();
-		plp.addCompareHtcOneMiniBlue.click();
 		plp.addCompareNokiaLumia.click();
+		comm.waitVisibilityOfElement(plp.addCompareHtcOneMiniBlue);
+		plp.addCompareHtcOneMiniBlue.click();
+		comm.waitElement(plp.productComparisonBtn);
 		plp.productComparisonBtn.click();
+		comm.waitElement(plp.comapreHtcOneMiniBlue);
 		plp.verifyComparisonFunctionality(plp.compareNokiaLumia);
 		plp.verifyComparisonFunctionality(plp.comapreHtcOneMiniBlue);
 			
@@ -53,6 +59,7 @@ public class PlpTestCases extends Base {
 		plp.verifyClearListBtnFunctionality(plp.noProductsToCompare.getText(), td.noCompareProductMsg);
 		
 	}
+
 	
 
 }
