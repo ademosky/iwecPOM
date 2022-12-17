@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.LoginPageTestCases">
+      <class name="testCases.PlpTestCases">
         <methods>
           <include name="end"/>
+          <include name="TC_PRODUCT_009_verifyCompareTwoProducts"/>
           <include name="start"/>
-          <include name="TC_LOGIN_002_logInWithValidCredentials"/>
         </methods>
-      </class> <!-- testCases.LoginPageTestCases -->
+      </class> <!-- testCases.PlpTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
