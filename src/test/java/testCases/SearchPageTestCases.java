@@ -27,7 +27,7 @@ public class SearchPageTestCases extends Base {
 	}
 	@AfterMethod
 	public void end() {
-		//driver.quit();
+		driver.quit();
 	}
 	@Test
 	public void TC_SEARCH001_searchExcistingProduct() {
