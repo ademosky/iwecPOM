@@ -26,7 +26,9 @@ public class HomePageObjects extends Base {
 	@FindBy(xpath = "//ul[@class=\"top-menu notmobile\"]/descendant::a[@href=\"/computers\"]")
 	public	WebElement computersCategory;
 	@FindBy(xpath = "//ul[@class=\"top-menu notmobile\"]/descendant::a[@href=\"/electronics\"]")
-		WebElement electronicsCategory;
+	public	WebElement electronicsCategory;
+	@FindBy(xpath = "//a[@href=\"/camera-photo\"]")
+	public WebElement cameraAndPhotoDropDown;
 	@FindBy(xpath = "//ul[@class=\"top-menu notmobile\"]/descendant::a[@href=\"/apparel\"]")
 	public	WebElement apparelCategory;
 	@FindBy(xpath = "//ul[@class=\"top-menu notmobile\"]/descendant::a[@href=\"/digital-downloads\"]")
@@ -37,7 +39,10 @@ public class HomePageObjects extends Base {
 	public	WebElement clothingSubCategory;
 	@FindBy(xpath = "//a[@href=\"/software\"]")
 	public WebElement softwareSubcategory;
-	
+	@FindBy(xpath = "(//a[@href=\"/software\"])[4]")
+	public WebElement softwarePdp;
+	@FindBy(xpath = "(//a[@href=\"/camera-photo\"])[4]")
+	public WebElement cameraAndPhotoCategory;
 	public HomePageObjects() {
 		PageFactory.initElements(driver, this);
 		}

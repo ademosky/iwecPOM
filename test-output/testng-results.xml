@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-05T13:24:59 CET" name="Default suite" finished-at="2023-02-05T13:25:09 CET" duration-ms="10196">
+  <suite started-at="2023-02-05T21:55:48 CET" name="Default suite" finished-at="2023-02-05T21:56:04 CET" duration-ms="15992">
     <groups>
     </groups>
-    <test started-at="2023-02-05T13:24:59 CET" name="Default test" finished-at="2023-02-05T13:25:09 CET" duration-ms="10196">
-      <class name="testCases.SearchPageTestCases">
-        <test-method is-config="true" signature="start()[pri:0, instance:testCases.SearchPageTestCases@34f5090e]" started-at="2023-02-05T13:24:59 CET" name="start" finished-at="2023-02-05T13:25:08 CET" duration-ms="9144" status="PASS">
+    <test started-at="2023-02-05T21:55:48 CET" name="Default test" finished-at="2023-02-05T21:56:04 CET" duration-ms="15992">
+      <class name="testCases.PdpTestCases">
+        <test-method is-config="true" signature="start()[pri:0, instance:testCases.PdpTestCases@a2431d0]" started-at="2023-02-05T21:55:48 CET" name="start" finished-at="2023-02-05T21:55:57 CET" duration-ms="9235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="TC_SEARCH_002()[pri:0, instance:testCases.SearchPageTestCases@34f5090e]" started-at="2023-02-05T13:25:08 CET" name="TC_SEARCH_002" finished-at="2023-02-05T13:25:09 CET" duration-ms="1007" status="PASS">
+        <test-method signature="TC_DETAILS_003()[pri:0, instance:testCases.PdpTestCases@a2431d0]" started-at="2023-02-05T21:55:57 CET" name="TC_DETAILS_003" finished-at="2023-02-05T21:56:04 CET" duration-ms="6718" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_SEARCH_002 -->
-        <test-method is-config="true" signature="end()[pri:0, instance:testCases.SearchPageTestCases@34f5090e]" started-at="2023-02-05T13:25:09 CET" name="end" finished-at="2023-02-05T13:25:09 CET" duration-ms="0" status="PASS">
+        </test-method> <!-- TC_DETAILS_003 -->
+        <test-method is-config="true" signature="end()[pri:0, instance:testCases.PdpTestCases@a2431d0]" started-at="2023-02-05T21:56:04 CET" name="end" finished-at="2023-02-05T21:56:04 CET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- testCases.SearchPageTestCases -->
+      </class> <!-- testCases.PdpTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

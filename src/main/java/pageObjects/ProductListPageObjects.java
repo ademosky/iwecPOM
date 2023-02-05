@@ -34,6 +34,11 @@ public class ProductListPageObjects extends Base {
 	public WebElement nightVisionsProduct;
 	@FindBy(xpath = "(//button[@class=\"button-2 product-box-add-to-cart-button\"])[2]")
 	public WebElement addToCartWindows8;
+	@FindBy(xpath = "//a[@href=\"/windows-8-pro\"]")
+	public WebElement windows8Pro;
+	@FindBy(xpath = "//a[@href=\"/leica-t-mirrorless-digital-camera\"]")
+	public WebElement leicaProduct;
+	
 	
 	
 	

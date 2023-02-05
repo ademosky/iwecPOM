@@ -65,6 +65,9 @@ public class CommonPageObjects extends Base {
 		Assert.assertEquals(actual_msg, expected);
 		System.out.println(actual_msg + "=" + expected);
 	}
+	public void sendKeysToField(WebElement webelement, String typeTextString) {
+		webelement.sendKeys(typeTextString);
+	}
 	public void closeBrowser() {
 		driver.quit();
 	}

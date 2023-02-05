@@ -27,6 +27,8 @@ public class TestData {
 	public String emptyShoppingCart = "Your Shopping Cart is empty!";
 	public String termsOfServiceMsg_expected = "Please accept the terms of service before the next step.";
 	public String noResultsMsg = "No products were found that matched your criteria.";
+	public String reviewErrorMsgExpected = "Only registered users can write reviews";
+	public String successfulReviewMessageExpected = "Product review is successfully added.";
 	//Url
 	public String logInErrorUrl = "https://demo.nopcommerce.com/login?returnurl=%2F";
 	public String succsesfulRegisterUrl = "https://demo.nopcommerce.com/registerresult/1?returnUrl=/";
@@ -34,6 +36,7 @@ public class TestData {
 	public String searchWithExistingProductUrl = "https://demo.nopcommerce.com/search?q=nike";
 	public String billingAddressUrl = "https://demo.nopcommerce.com/onepagecheckout#opc-billing";
 	public String homePageUrl = "https://demo.nopcommerce.com/";
+	public String windows8Url = "https://demo.nopcommerce.com/windows-8-pro";
 	//Search words
 	public String existingProduct = "nike";
 	public String nonExistingProduct = "bird";
@@ -45,6 +48,8 @@ public class TestData {
 	public String valueManufacturer = "Apple";
 	public String computerValue = "1";
 	public String nikeSizeValue = "3X";
+	public String tittleReview = "Best Product";
+	public String textReview = "The best product that I bought, strongly reccomend";
 	
 	//SKU values
 	public String levis511Sku = "LV_511_JN";

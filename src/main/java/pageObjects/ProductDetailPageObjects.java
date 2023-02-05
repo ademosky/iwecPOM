@@ -2,7 +2,7 @@ package pageObjects;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -54,6 +54,18 @@ public class ProductDetailPageObjects extends Base {
 	public WebElement addToCartLevis511;
 	@FindBy(xpath = "//span[@class='sku-number']")
 	public WebElement levis511ActualSkuNmb;
+	@FindBy(xpath = "(//a[@href=\"/productreviews/16\"])[2]")
+	public WebElement addReviewBtn;
+	@FindBy(xpath = "//div[@class=\"message-error validation-summary-errors\"]")
+	public WebElement reviewErrorMsg;
+	@FindBy(id = "AddProductReview_Title")
+	public WebElement addTitleReview;
+	@FindBy(id = "AddProductReview_ReviewText")
+	public WebElement addTextReview;
+	@FindBy(xpath = "//button[@name=\"add-review\"]")
+	public WebElement submitReviewBtn;
+	@FindBy(xpath = "//div[@class=\"result\"]")
+	public WebElement succesfulReviewMessage;
 	
 	
 	
