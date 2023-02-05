@@ -22,6 +22,7 @@ public class ShoppingCartTestCases extends Base {
 	ProductDetailPageObjects pdp;
 	CommonPageObjects comm;
 	ShoppingCartPageObjects shop;
+	//almir
 	
 	@BeforeMethod
 	public void start() {
