@@ -43,7 +43,7 @@ public class CommonPageObjects extends Base {
 		wait.until(ExpectedConditions.elementToBeClickable(elementToWait));
 	}
 	public void waitVisibilityOfElement (WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, 90);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	public void selectFromDropMenuByIndex(WebElement elementDropDown, int index ) {
@@ -60,9 +60,10 @@ public class CommonPageObjects extends Base {
 		String actual_title =  driver.getTitle();
 		Assert.assertEquals(actual_title, expected_title);
 	}
-	public void assertActualWithExpectedText(String actual, String expected) {
-		Assert.assertEquals(actual, expected);
-		System.out.println(actual + "=" + expected);
+	public void assertActualWithExpectedText(WebElement actual, String expected) {
+		String actual_msg = actual.getText();
+		Assert.assertEquals(actual_msg, expected);
+		System.out.println(actual_msg + "=" + expected);
 	}
 	public void closeBrowser() {
 		driver.quit();

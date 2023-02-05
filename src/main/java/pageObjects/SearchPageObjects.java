@@ -12,6 +12,7 @@ import testData.TestData;
 public class SearchPageObjects extends Base {
 	TestData td = new TestData();
 	
+	
 	@FindBy(xpath = "//button[@class=\"button-1 search-box-button\"]")
 		   WebElement searchBtn;
 	@FindBy(xpath = "//input[@id=\"small-searchterms\"]")
@@ -23,9 +24,12 @@ public class SearchPageObjects extends Base {
 	@FindBy(xpath = "(//button[@type=\"submit\"])[2]")
 	public WebElement advancedSearchBtn;
 	@FindBy(xpath = "//select[@id=\"mid\"]")
-		WebElement manufacturerAdvancedSrc;
+	public WebElement manufacturerAdvancedSrc;
 	@FindBy(xpath = "//div[@class=\"no-result\"]")
 	public	WebElement noResultMsg;
+
+	
+	
 	
 	
 	

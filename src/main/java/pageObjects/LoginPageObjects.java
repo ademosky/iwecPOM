@@ -23,7 +23,7 @@ public class LoginPageObjects extends Base {
 
 	
 	
-	//Almir
+
 	
 	
 	public LoginPageObjects() {

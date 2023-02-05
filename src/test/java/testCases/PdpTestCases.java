@@ -39,23 +39,24 @@ public class PdpTestCases extends Base {
 	@Test
 	public void testCaseFromClass() {
 		hp.navigateToSubcategory(hp.apparelCategory, hp.clothingSubCategory);
-		//hp.navigateToClothingSubCategory();
+		hp.navigateToClothingSubCategory();
 		plp.nikeTailwindLoose.click();
 		pdp.selectProductSize(pdp.productSize, td.nikeSizeValue);
 		pdp.typeProductQuantity(td.quantityValueNumNike);
 		pdp.addToCartPDP.click();
 		comm.waitUntilElementIsClickable(pdp.shoppingCart);
 		pdp.shoppingCart.click();
-		pdp.verifySkuNumber(pdp.nikeSkuNumber.getText(), td.nikeSkuValue);
-		
+		pdp.assertSkuNumber(pdp.nikeSkuNumber, td.nikeSkuValue);
+	
 		
 	}
+	@Test
 	public void TC_DETAILS_013_downloadFromPdp() {
 		hp.navigateToDigitalCategory();
 		plp.nightVisionsProduct.click();
 		pdp.downloadNightVisionProduct.click();
-		
-		
+		driver.switchTo().alert().accept();
+			
 	}
 	
 }

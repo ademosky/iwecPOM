@@ -2,9 +2,7 @@ package pageObjects;
 
 import java.util.concurrent.TimeUnit;
 
-
-
-
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -32,6 +30,8 @@ public class ProductDetailPageObjects extends Base {
 	public	WebElement nikeSkuNumber;
 	@FindBy(xpath = "//span[@class=\"cart-label\"]")
 	public WebElement shoppingCart;
+	@FindBy(xpath = "(//button[@class='button-2 product-box-add-to-cart-button'])[3]")
+	public WebElement addToCartPridePredujice;
 	@FindBy(xpath = "//h2[@class=\"product-title\"]/child::a[@href=\"/levis-511-jeans\"]")
 	public WebElement levis511JeansProduct;
 	@FindBy(xpath = "(//button[@class=\"button-2 product-box-add-to-cart-button\"])[2]")
@@ -50,6 +50,11 @@ public class ProductDetailPageObjects extends Base {
 	public WebElement checkOutBtn;
 	@FindBy(xpath = "//a[@href=\"/cart\"]")
 	public WebElement shopingCartPopUpBtn;
+	@FindBy(xpath = "(//button[@class=\"button-2 product-box-add-to-cart-button\"])[2]")
+	public WebElement addToCartLevis511;
+	@FindBy(xpath = "//span[@class='sku-number']")
+	public WebElement levis511ActualSkuNmb;
+	
 	
 	
 	public ProductDetailPageObjects() {
@@ -66,9 +71,10 @@ public class ProductDetailPageObjects extends Base {
 		productQuantity.clear();
 		productQuantity.sendKeys(quantityValueNum);
 	}
-	public void verifySkuNumber(String actual_skuNmb, String expected_skuNmb) {
+	public void assertSkuNumber(WebElement actual_skuNmb, String expected_skuNmb) {
 		
-		Assert.assertEquals(actual_skuNmb, expected_skuNmb);
+		String skuNmb = actual_skuNmb.getText();
+		Assert.assertEquals(skuNmb, expected_skuNmb);
 		
 	}
 	public void waitUntilElementIsClickable(WebElement clickableElement) {

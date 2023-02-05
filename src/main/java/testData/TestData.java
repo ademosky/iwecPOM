@@ -24,6 +24,9 @@ public class TestData {
 	//text_messages
 	public String errorEmailMsgTd = "Login was unsuccessful. Please correct the errors and try again.";
 	public String noCompareProductMsg = "You have no items to compare.";
+	public String emptyShoppingCart = "Your Shopping Cart is empty!";
+	public String termsOfServiceMsg_expected = "Please accept the terms of service before the next step.";
+	public String noResultsMsg = "No products were found that matched your criteria.";
 	//Url
 	public String logInErrorUrl = "https://demo.nopcommerce.com/login?returnurl=%2F";
 	public String succsesfulRegisterUrl = "https://demo.nopcommerce.com/registerresult/1?returnUrl=/";
@@ -44,6 +47,7 @@ public class TestData {
 	public String nikeSizeValue = "3X";
 	
 	//SKU values
+	public String levis511Sku = "LV_511_JN";
 	public String nikeSkuValue = "NK_TLS_RS";
 	public String levisItemValue_01 = "3";
 	public String levisItemValue_02 = "7";

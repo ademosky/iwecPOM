@@ -11,7 +11,7 @@ import pageObjects.HomePageObjects;
 import pageObjects.LoginPageObjects;
 import testData.TestData;
 
-//Almir  proba git
+
 
 public class LoginPageTestCases extends Base {
 		
